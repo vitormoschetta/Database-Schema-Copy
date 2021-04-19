@@ -1,7 +1,6 @@
 # Database-Schema-Copy
 
-A ideia deste projeto é criar um console app em C# capaz de fazer uma cópia de um banco de dados informado em um destino informado.
-Obs: de qualquer provedor de banco dedos,seja de origem ou destino.
+A ideia deste projeto é criar um console app em C# capaz de fazer uma cópia do `Schema` de um banco de dados de qualquer provedor. Exemplificando, imaginemos que eu tenha um banco de dados Oracle com um schema 'X', e desejo transformar ele em um banco de dados Sql Server, trazendo a mesma etrutura de tabelas e colunas existente no schema 'X' do meu DB Oracle.
 
 Precisamos receber as seguintes informações (origem e destino):   
 
@@ -14,5 +13,4 @@ Precisamos receber as seguintes informações (origem e destino):
 
 O que mais precisamos:
 
-1. Salvar as queries necessárias, separando e organizando por provedor de banco de dados. Preferencialmente chumbadas no próprio código fonte, ou arquivo de 
-configuração, para não ser necessário utilizarmos base de dados própria. Deve funcionar apenas ao executar o app informando o que for necessário. 
+1. Montagem das queries genericas que deverão ser utilizadas para a extração do schema. Precisamos montar e organizar essas queries por provedor.
